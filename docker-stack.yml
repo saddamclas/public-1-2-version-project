@@ -1,0 +1,9 @@
+version: '3'
+services: 
+   app:
+    image: saddamclas/mywebpagee:2
+    deploy:
+     replicas: 2
+    ports:
+     - "1888:80"
+

@@ -1,0 +1,12 @@
+FROM httpd
+MAINTAINER shaik.saddam3@gmail.com
+RUN rm /usr/local/apache2/htdocs/*
+COPY ./index1/index.html /usr/local/apache2/htdocs/
+RUN mkdir  /usr/local/apache2/htdocs/public
+COPY ./index2/index.html /usr/local/apache2/htdocs/public/
+
+EXPOSE 80
+ 
+  
+ 
+
